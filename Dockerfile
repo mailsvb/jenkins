@@ -3,7 +3,7 @@ USER root
 
 ENV NODE_MAJOR=18
 
-RUN apt-get update -qq && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common zip
+RUN apt-get update -qq && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common zip jq
 
 ### Adding docker-ce source
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
