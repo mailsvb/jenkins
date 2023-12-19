@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:$JENKINS_VERSION
+FROM jenkins/jenkins:${JENKINS_VERSION}
 USER root
 
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common zip jq
