@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           build-args: |
-            JENKINS_VERSION=${{ vars.JENKINS_VERSION }}
-            NODE_MAJOR=${{ vars.NODE_MAJOR }}
+            JENKINS_VERSION="${{ vars.JENKINS_VERSION }}"
+            NODE_MAJOR="${{ vars.NODE_MAJOR }}"
           push: true
-          tags: mailsvb/jenkins:$JENKINS_VERSION
+          tags: mailsvb/jenkins:${{ vars.JENKINS_VERSION }}
