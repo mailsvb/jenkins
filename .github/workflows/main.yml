@@ -3,6 +3,9 @@
 
 name: publish
 
+env:
+  JENKINS_VERSION: '2.426.2'
+
 on:
   workflow_dispatch:
 #  schedule:
@@ -30,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mailsvb/jenkins:latest
+          tags: mailsvb/jenkins:$JENKINS_VERSION
