@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.426.2
+FROM jenkins/jenkins:$JENKINS_VERSION
 USER root
 
 ENV NODE_MAJOR=18
