@@ -5,6 +5,7 @@ name: publish
 
 env:
   JENKINS_VERSION: '2.426.2'
+  NODE_MAJOR: '18'
 
 on:
   workflow_dispatch:
