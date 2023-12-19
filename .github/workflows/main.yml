@@ -33,5 +33,6 @@ jobs:
         uses: docker/build-push-action@v5.1.0
         with:
           context: .
+          build-args: JENKINS_VERSION=$JENKINS_VERSION
           push: true
           tags: mailsvb/jenkins:$JENKINS_VERSION
