@@ -3,10 +3,6 @@
 
 name: publish
 
-env:
-  JENKINS_VERSION: '2.426.2'
-  NODE_MAJOR: '18'
-
 on:
   workflow_dispatch:
 #  schedule:
@@ -33,6 +29,6 @@ jobs:
         uses: docker/build-push-action@v5.1.0
         with:
           context: .
-          build-args: JENKINS_VERSION=$JENKINS_VERSION
+          build-args: JENKINS_VERSION=${{ vars.JENKINS_VERSION }},NODE_MAJOR=${{ vars.JENKINS_VERSION }}
           push: true
           tags: mailsvb/jenkins:$JENKINS_VERSION
