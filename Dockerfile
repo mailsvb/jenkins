@@ -1,8 +1,6 @@
 FROM jenkins/jenkins:$JENKINS_VERSION
 USER root
 
-ENV NODE_MAJOR=18
-
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common zip jq
 
 ### Adding docker-ce source
