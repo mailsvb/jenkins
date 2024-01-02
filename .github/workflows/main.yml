@@ -34,4 +34,4 @@ jobs:
             JENKINS_VERSION=${{ vars.JENKINS_VERSION }}
             NODE_MAJOR=${{ vars.NODE_MAJOR }}
           push: true
-          tags: mailsvb/jenkins:${{ vars.JENKINS_VERSION }}
+          tags: mailsvb/jenkins:${{ vars.JENKINS_VERSION }},mailsvb/jenkins:latest
