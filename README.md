@@ -1,5 +1,6 @@
 # jenkins
-Dockerized Jenkins Build Server with docker-ce and nodejs included
+Dockerized Jenkins Build Server with docker-ce and nodejs included.
+
 Current Jenkins version: 2.445
 
 [Visist Docker Hub](https://hub.docker.com/r/mailsvb/jenkins)
